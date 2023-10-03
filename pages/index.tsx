@@ -5,15 +5,7 @@ import Link from 'next/link';
 const HomePage = () => {
   const featuredEvents = getFeaturedEvents();
 
-  return (
-    <div>
-      <h1>The Home Page</h1>
-      <Link href="/events">All Events</Link>
-      <div>
-        <EventList events={featuredEvents} />
-      </div>
-    </div>
-  );
+  return <EventList events={featuredEvents} />;
 };
 
 export default HomePage;
