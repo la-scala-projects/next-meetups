@@ -3,6 +3,7 @@ import { getEventById } from '@/mocks/mock-data';
 import EventSummary from '@/components/event-detail/EventSummary';
 import EventLogistics from '@/components/event-detail/EventLogistics';
 import EventContent from '@/components/event-detail/EventContent';
+import ErrorAlert from '@/components/ui/ErrorAlert';
 
 const EventDetailPage = () => {
   const router = useRouter();
@@ -23,7 +24,9 @@ const EventDetailPage = () => {
       </EventContent>
     </>
   ) : (
-    <p>No event found!</p>
+    <ErrorAlert>
+      <p>No event found!</p>
+    </ErrorAlert>
   );
 };
 

@@ -31,6 +31,16 @@ const DUMMY_EVENTS: Events = [
     image: 'images/extrovert-event.jpg',
     isFeatured: true,
   },
+  {
+    id: 'e4',
+    title: 'Next.js workshop',
+    description:
+      'Learn the most popular React framework and find your dream job!',
+    location: 'React Avenue 18, 19203 Nextville',
+    date: '2023-01-10',
+    image: 'images/next-workshop.jpg',
+    isFeatured: false,
+  },
 ];
 
 export function getFeaturedEvents(): Events {
